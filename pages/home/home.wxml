@@ -1,0 +1,22 @@
+<!--pages/home/home.wxml-->
+
+<view>
+  <view class="music-cover">
+    <image class="music-cover-img" src="{{current.poster}}" />
+  </view>
+  <view class="music-info">
+    <view class="music-title">{{current.name}}</view>
+    <view class="music-author">{{current.author}}</view>
+  </view>
+
+  <view>
+    <audio
+      src="{{src}}"
+      id="myaudio"
+    ></audio>
+  </view>
+
+  <view class="play-option">
+    <button class="play" bindtap="playAudio">播</button>
+  </view>
+</view>
